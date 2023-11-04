@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookPal</title>
+    <link rel = "stylesheet" href = "./stylesheet.css">
+    <link rel = "stylesheet" href = "./afterFilter.css">
+</head>
+<body>
+    <section>
+        <div>
+            <button id="menu-toggle"  class = "menu-btn" onclick="hideShow()">&#9776;</button>
+
+        </div>
+
+        <div class = "toggle_items">
+            <ul id = "mobile">
+                <li><img src="./Cookpal 1.png"></li>
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <nav>
+            <div class = "logo">
+                <img src = "./Cookpal 1.png">
+            </div>
+
+            
+
+            <div class = "nav-links">
+                <ul class = "menu">
+                    <li class = "menuI">Home</li>
+                    <li class = "menuI">Explore</li>
+                    <li class = "menuI">Help</li>
+                </ul>
+            </div>
+
+            <div class = "profile"><img src = "./Ellipse 2.png"></div>
+
+            
+            
+        </nav>
+
+        <div class = "img">
+            <img src = "./Rectangle 20.png">
+        </div>
+    </section>
+
+    <section>
+        <div class = "search-container-header">
+            <!-- <h2>Seach For Recipes</h2> -->
+        </div>
+            <div class = "search-container">   
+                <input class = "search-bar" id = "search-bar" type="text" placeholder="Search for recipes" oninput="filterArray()">
+                <button class = "search-btn"><img src = "./Search-btn.png"></button>
+                
+            </div>
+            
+    </section>
+
+    <section class = "filter-btn">
+        <button id="all-button" onclick="filterArrayAll()">All</button>
+        <button id="veg-button" onclick="filterArrayVeg()">Veg</button>
+        <button id="non-veg-button" onclick="filterArrayNonVeg()">Non-Veg</button>
+        
+    </section>
+
+    <section id = "recipes-filters">
+        <div class = "filters">
+            <h2>Filters</h2>
+
+            <!-- <div> -->
+                <p>Rating</p>
+
+                <input class="filter-checkbox" type="checkbox" id="above4" />
+                <label for="above4">4 and Above</label><br>
+                <input class="filter-checkbox" type="checkbox" id="below4" />
+                <label for="below4">Below 4</label><br>
+                
+                <div id="recipe-display"></div>
+
+        </div>
+        <div id = "recipeDiv">
+            <div id="recipe-container" class="recipe-container">
+                <!-- Recipes will be displayed here -->
+            </div>
+
+            <div id = "recipe-display-container">
+                <!-- <div id="recipe-filter-container"> -->
+                    <!-- Recipes will be displayed here -->
+                    <!-- <ul id = "filteresList"></ul> -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id = "tagline">
+            <img src = "./Cookpal 1.png">
+            <p>Cookpal is a recipe website with a wide variety of<br> delicious recipes,
+                easy-to-use search function. Join our <br>community and let's cook together!
+            </p>
+        </div>
+
+        <div class = "other">
+            <h2>Company</h2>
+            <ul class = "list">
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Team</li>
+                <li>About us</li>
+                <li>Activity</li>
+            </ul>
+        </div>
+
+        <div class = "other">
+            <h2>Resources</h2>
+            <ul class = "list">
+                <li>Blog</li>
+                <li>Use Cases</li>
+                <li>Testimonials</li>
+                <li>Insights</li>
+            </ul>
+        </div>
+
+        <div class = "other">
+            <img src = "./Cookpal 1.png">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+        
+            <input id = "email" type="email" placeholder="Your Email">
+            <button class = "sub-btn">Subscribe</button> 
+        </div>
+
+    </footer>
+    
+    <div id = "socials">
+        <img src = "./Instagram.png">
+        <img src ="./Twitter.png">
+        <img src="./Facebook.png">
+        <img src="./Linkedin.png">
+    </div>
+
+    <script src = "./arrayData.js"></script>
+    <script src = "./filter.js"></script>
+    <script src = "./script.js"></script>
+</body>
+</html>
